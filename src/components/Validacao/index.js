@@ -7,11 +7,22 @@ import {
     Image,
     Text
 } from "react-native";
+import Icon from 'react-native-vector-icons/FontAwesome';
+
 
 
 export default props => {
     return (
         <View style={styles.container}>
+
+            <TouchableOpacity style={styles.buttonVoltar}>
+                <Icon
+                    name="arrow-left"
+                    size={20}
+                    color="#ffe600ff" />
+                <Text style={styles.txtButtonVoltar}>Voltar</Text>
+            </TouchableOpacity>
+
             <Text style={styles.txtTitulo}>Validação</Text>
             <Text style={styles.txtUsuario}>Olá Senac!</Text>
             <Text style={styles.txtInformacao}>Insira seu e-mail para continuar</Text>
@@ -120,6 +131,23 @@ const styles = StyleSheet.create({
         color: "#fab300ff",
         fontSize: 18,
         marginLeft: 10,
-    }
+    },
+     buttonVoltar: {
+        flexDirection:"row",
+        marginLeft: 50,
+        alignSelf: "flex-start",
+        marginBottom: 100,
+        borderColor: "#ffe600ff",
+        borderWidth: 2,
+        width: 150,
+        height: 40,
+        borderRadius: 6,
+        justifyContent: "center",
+        alignItems: "center",
+    },
+    txtButtonVoltar: {
+        padding:10,
+        color: "#ffe600ff",
+    },
 
 })
