@@ -43,18 +43,23 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         backgroundColor: "#1D1D2E",
+
     },
     titulo: {
-        fontSize: 24,
+        fontSize: 30,
         color: "#fff",
         alignSelf: "center",
-        margin: 20,
+        marginTop: 30,
+        marginBottom: 5,
     },
     grupoCard: {
         flexDirection: "row"
     },
     cards: {
-        margin: 10,
+        marginLeft: 10,
+        marginRight: 10,
+        marginTop: 30,
+        marginBottom: 10,
         height: 230,
         backgroundColor: "#FFA500",
         width: 200,
@@ -70,6 +75,6 @@ const styles = StyleSheet.create({
     txtTitCard: {
         fontWeight: "bold",
         fontSize: 21,
-        color: "#4a0358ff",
+        color: "#ffffffff",
     }
 })
