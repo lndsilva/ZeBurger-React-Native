@@ -4,7 +4,8 @@ import { StyleSheet, Text } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 
 
-import DrawerNav from "./components/DrawerNav";
+import AppDrawerNav from "./navegacao/AppDrawerNav";
+// import DrawerNav from "./components/DrawerNav";
 // import TabBarNav from "./components/TabBarNav";
 // import BottomNav from "./components/BottomNav";
 // import Bebidas from "./components/Bebidas";
@@ -28,7 +29,8 @@ export default props => {
                 {/* <Bebidas/> */}
                 {/* <BottomNav /> */}
                 {/* <TabBarNav/> */}
-                <DrawerNav/>
+                {/* <DrawerNav/> */}
+                <AppDrawerNav/>
             </NavigationContainer>
         </SafeAreaView>
     )
@@ -39,3 +41,4 @@ const styles = StyleSheet.create({
         flex: 1,
     }
 })
+
