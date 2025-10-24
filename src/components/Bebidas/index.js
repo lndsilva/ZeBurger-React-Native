@@ -106,7 +106,7 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
         alignItems: "center",
-        backgroundColor: "#1D1D2E"
+        backgroundColor: "#1D1D2E",
     },
     titulo: {
         fontSize: 30,
@@ -118,6 +118,8 @@ const styles = StyleSheet.create({
         padding: 5,
         marginVertical: 8,
         marginHorizontal: 16,
+        borderRadius: 6,
+        borderWidth: 2,
 
     },
     txtItem: {
@@ -132,5 +134,8 @@ const styles = StyleSheet.create({
     },
     grupoLista: {
         flexDirection: "row",
-    }
+        width: 400,
+        height: 80,
+    },
+
 })
